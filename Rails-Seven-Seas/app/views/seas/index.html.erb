@@ -13,10 +13,6 @@
             <h4 class="card-title text-center"><%= sea.name %></h4>
             <p class="card-text" style="height: 10rem"><%= sea.bio %></p>
             <a href="/seas/<%=sea.id%>" style="width: 100%" class="btn btn-info">Sea Profile</a>
-          <form method="POST" action="/seas/<%sea.id%>/delete">
-            <input type="hidden" name="_method" value="DELETE" />
-            <input type='submit' name='delete'>
-          </form>
           </div>
         </div>
       </div>
