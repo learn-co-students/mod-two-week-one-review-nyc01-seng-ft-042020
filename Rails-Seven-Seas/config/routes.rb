@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   get '/seas/new', to: 'seas#new'
 
+  post '/seas', to: 'seas#create'
+
+  get '/seas/:id/edit', to: 'seas#edit'
+
+  patch '/seas/:id', to: 'seas#update'
+
+  delete '/seas/:id', to: 'seas#destroy'
+
   resources :seas, only: :index 
   resources :seas, only: :show
 end
